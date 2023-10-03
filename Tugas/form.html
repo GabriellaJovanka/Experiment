@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      /* *, body, html {
+        width: 100%;
+      } */
+
+      body {
+        /* background-color: #249EA0; */
+        /* background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(112, 247, 251, 1) 16%,
+          rgba(76, 211, 212, 1) 32%,
+          rgba(53, 182, 184, 1) 50%,
+          rgba(76, 211, 212, 1) 68%,
+          rgba(112, 247, 251, 1) 84%,
+          rgba(255, 255, 255, 1) 100%
+        ); */
+
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 1) 2%,
+          rgba(205, 249, 255, 1) 16%,
+          rgba(174, 249, 255, 1) 35%,
+          rgba(131, 229, 255, 1) 64%,
+          rgba(255, 255, 255, 1) 98%
+        );
+      }
+
+      .form {
+        /* background-color: beige; */
+        /* border: 2px solid black; */
+        border-radius: 15px;
+        padding: 10px;
+      }
+
+      h1 {
+        /* background-color: chartreuse; */
+        margin-bottom: 0.1em;
+        margin-top: 0.3em;
+      }
+
+      form input {
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 23%;
+      }
+
+      .div_keseluruhan {
+        border: 2px solid #f35506;
+        border-radius: 12px;
+        /* padding: 2px; */
+        /* gap: 5em; */
+        width: 80%;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(251, 220, 205, 1) 16%,
+          rgba(255, 205, 181, 1) 32%,
+          rgba(255, 195, 165, 1) 50%,
+          rgba(255, 205, 181, 1) 68%,
+          rgba(251, 220, 205, 1) 84%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        /* background-color: #fbb18c; */
+        /* background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 219, 202, 1) 16%,
+          rgba(255, 185, 152, 1) 32%,
+          rgba(255, 174, 137, 1) 50%,
+          rgba(255, 185, 152, 1) 68%,
+          rgba(255, 219, 202, 1) 84%,
+          rgba(255, 255, 255, 1) 100%
+        ); */
+      }
+
+      form select {
+        /* width: 26em; */
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+
+      .label {
+        width: 10em;
+      }
+
+      .kotak_input {
+        margin: 0;
+        width: 25em;
+      }
+
+      :placeholder-shown {
+        font-style: italic;
+      }
+
+      button {
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 5px;
+      }
+
+      .link_ke_biodata {
+        text-decoration: none;
+        color: black;
+      }
+
+      /* style untuk ukuran handphone */
+      @media (max-width: 768px) {
+        *,
+        html,
+        body {
+          width: 100%;
+          /* margin: 0.2em; */
+          /* margin: 0.3em;
+          margin-left: 0.3em;
+          /* margin-right: 0; */
+        }
+
+        /* body {
+          background-color: white;
+        } */
+
+        .tabel_form {
+          margin: 0;
+
+          width: 100%;
+        }
+
+        .div_keseluruhan {
+          border: 2px solid black;
+          border-radius: 12px;
+          /* padding: 2px; */
+          /* gap: 5em; */
+          width: 80%;
+          background: rgb(255, 255, 255);
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 219, 202, 1) 16%,
+            rgba(255, 185, 152, 1) 32%,
+            rgba(255, 174, 137, 1) 50%,
+            rgba(255, 185, 152, 1) 68%,
+            rgba(255, 219, 202, 1) 84%,
+            rgba(255, 255, 255, 1) 100%
+          );
+        }
+
+        /* .tabel_button {
+          margin-top: 0.1rem;
+        } */
+
+        .tabel_button table tr td {
+          width: 0.1em;
+        }
+
+        .div_keseluruhan {
+          width: 98%;
+        }
+
+        h1 {
+          /* background-color: chartreuse; */
+          margin-bottom: 0.1em;
+          margin-top: 0.3em;
+        }
+
+        .tabel_button {
+          /* background-color: aqua; */
+          margin-top: 0.1em;
+          width: 98%;
+          border-radius: 10px;
+        }
+
+        .form {
+          padding: 3px;
+          margin: 0;
+          width: 97%;
+        }
+
+        table {
+          margin: 0;
+          width: 94%;
+        }
+
+        .kotak_input {
+          margin: 0;
+          width: 21em;
+        }
+
+        /* select {
+          width: em;
+        } */
+
+        .kotak_input_radio_pria,
+        .kotak_input_radio_wanita {
+          margin: 0;
+          width: 10%;
+        }
+
+        .label_pria_wanita {
+          margin: 0;
+          width: 5%;
+        }
+
+        /* input {
+          margin: 0;
+          width: 0.3em;
+        } */
+
+        select {
+          margin: 0;
+          width: 16em;
+        }
+
+        .button_reset,
+        .button_biodata,
+        .button_submit {
+          width: 9em;
+        }
+
+        .label {
+          margin: 0;
+          /* width: 10em; */
+        }
+
+        .titik_dua {
+          width: 1%;
+        }
+
+        /* button {
+          width: 90%;
+        } */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="div_keseluruhan">
+      <div class="tabel_form">
+        <form action="" class="form">
+          <table width="400">
+            <h1>Formulir Biodata</h1>
+
+            <tr>
+              <td class="label">Nama</td>
+              <td class="titik_dua">:</td>
+              <td>
+                <input
+                  class="kotak_input"
+                  type="text"
+                  id="Name"
+                  placeholder="Nama Lengkap"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">NIM</td>
+              <td class="titik_dua">:</td>
+              <td>
+                <input
+                  type="text"
+                  class="kotak_input"
+                  id="NIM"
+                  placeholder="ex : A11.2020.13900"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">Jurusan</td>
+              <td class="titik_dua">:</td>
+              <td>
+                <input
+                  type="text"
+                  class="kotak_input"
+                  id="Jurusan"
+                  placeholder="ex : Teknik Informatika"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">Fakultas</td>
+              <td class="titik_dua">:</td>
+              <td>
+                <select name="" id="Fakultas">
+                  <option value="">Fakultas Ilmu Komputer</option>
+                  <option value="">Fakultas Ilmu Budaya</option>
+                  <option value="">Fakultas Ekonomi dan Bisnis</option>
+                  <option value="">Fakultas Teknik</option>
+                  <option value="">Fakultas Kesehatan</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">Angkatan</td>
+              <td class="titik_dua">:</td>
+              <td>
+                <input
+                  type="text"
+                  class="kotak_input"
+                  id="Angkatan"
+                  placeholder="Tahun Angkatan"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="label">Jenis Kelamin</td>
+              <td class="titik_dua">:</td>
+              <!-- <td class="label_pria_wanita" > -->
+
+              <td colspan="2" class="kotak_input_radio_pria">
+                Pria <input type="radio" /> Wanita<input type="radio" />
+              </td>
+
+              <!-- <td class="kotak_input_radio_wanita">
+            <input type="radio" />
+          </td> -->
+
+              <!-- </td> -->
+            </tr>
+
+            <tr>
+              <td class="label">Email</td>
+              <td class="titik_dua">:</td>
+              <td>
+                <input
+                  type="text"
+                  class="kotak_input"
+                  id="Email"
+                  placeholder="Email Pribadi"
+                  required
+                />
+              </td>
+            </tr>
+
+            <!-- <tr>
+          <td>
+            <button>
+              <a class="link_ke_biodata" href="biodata.html">Submit</a>
+            </button>
+          </td>
+        </tr> -->
+
+            <!-- <tr>
+          <td> 
+            <button type="submit" class="button_reset" >Submit</button> 
+            <button class="button_reset" >Reset</button>
+          </td>
+
+        </tr> -->
+          </table>
+        </form>
+      </div>
+
+      <div class="tabel_button">
+        <form action="">
+          <table>
+            <tr>
+              <td>
+                <button type="submit" class="button_submit">Submit</button>
+              </td>
+
+              <td>
+                <button type="reset" class="button_reset">Reset</button>
+              </td>
+
+              <td>
+                <button class="button_biodata">
+                  <a href="biodata.html">Biodata</a>
+                </button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+
+    <!-- <button type="submit" class="button_submit" >Submit</button> <br> <br>
+    <button class="button_reset" >Reset</button> <br> <br>
+    <button class="button_biodata" > <a href="biodata.html">Biodata</a> </button> -->
+  </body>
+</html>
